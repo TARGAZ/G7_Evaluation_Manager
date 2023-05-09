@@ -26,6 +26,7 @@ namespace Evaluation_Manager
             {
                 this.Hide();
                 FrmStudents frmStudents = new FrmStudents();
+                this.Hide();
                 frmStudents.ShowDialog();
                 this.Close();
             }

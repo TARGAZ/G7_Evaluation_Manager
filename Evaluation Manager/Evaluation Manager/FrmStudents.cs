@@ -26,16 +26,16 @@ namespace Evaluation_Manager
         private void ShowStudents()
         {   
             List<Student> students = StudentRepository.GetStudents();
-            StudentDGV.DataSource = students;
-            StudentDGV.Columns["Id"].DisplayIndex = 0;
-            StudentDGV.Columns["FirstName"].DisplayIndex = 1;
-            StudentDGV.Columns["LastName"].DisplayIndex = 2;
-            StudentDGV.Columns["Grade"].DisplayIndex = 3;
+            dgvStudents.DataSource = students;
+            dgvStudents.Columns["Id"].DisplayIndex = 0;
+            dgvStudents.Columns["FirstName"].DisplayIndex = 1;
+            dgvStudents.Columns["LastName"].DisplayIndex = 2;
+            dgvStudents.Columns["Grade"].DisplayIndex = 3;
         }
 
         private void btnEvaluateStudent_Click(object sender, EventArgs e)
         {
-            Student selectdStudent = StudentDGV.CurrentRow.DataBoundItem as Student;
+            Student selectdStudent = dgvStudents.CurrentRow.DataBoundItem as Student;
 
             FrmEvaluation frmEvaluation = new FrmEvaluation(selectdStudent);
             frmEvaluation.ShowDialog();

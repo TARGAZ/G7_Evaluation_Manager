@@ -71,6 +71,7 @@
     <Compile Include="Models\Activity.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Teacher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ActivityRepository.cs" />
@@ -93,11 +94,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="DLLs\.vs\DLLs\FileContentIndex\86bf397c-971e-40ca-9c37-93cfb011c50c.vsidx" />
-    <None Include="DLLs\.vs\DLLs\FileContentIndex\read.lock" />
-    <None Include="DLLs\.vs\ProjectSettings.json" />
-    <None Include="DLLs\.vs\slnx.sqlite" />
-    <None Include="DLLs\.vs\VSWorkspaceState.json" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -114,9 +110,6 @@
   <ItemGroup>
     <Content Include="DLLs\DBLayer.dll" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DLLs\.vs\DLLs\FileContentIndex\merges\" />
-    <Folder Include="DLLs\.vs\DLLs\v17\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
