@@ -17,9 +17,22 @@ namespace Evaluation_Manager
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin1_Click(object sender, EventArgs e)
         {
-
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+            
+            if(username == "teacher" && password == "test")
+            {
+                this.Hide();
+                FrmStudents frmStudents = new FrmStudents();
+                frmStudents.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Wrong credentials");
+            }
         }
     }
 }
