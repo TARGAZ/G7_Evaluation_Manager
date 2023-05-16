@@ -35,7 +35,7 @@ namespace Evaluation_Manager
 
         private void btnEvaluateStudent_Click(object sender, EventArgs e)
         {
-            Teacher selectdStudent = dgvStudents.CurrentRow.DataBoundItem as Teacher;
+            Student selectdStudent = dgvStudents.CurrentRow.DataBoundItem as Student;
 
             FrmEvaluation frmEvaluation = new FrmEvaluation(selectdStudent);
             frmEvaluation.ShowDialog();

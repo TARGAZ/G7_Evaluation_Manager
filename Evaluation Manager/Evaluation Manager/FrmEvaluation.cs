@@ -14,9 +14,9 @@ namespace Evaluation_Manager
 {
     public partial class FrmEvaluation : Form
     {
-        private Teacher selectdStudent;
+        private Student selectdStudent;
 
-        public FrmEvaluation(Teacher selectdStudent)
+        public FrmEvaluation(Student selectdStudent)
         {
             InitializeComponent();
             this.selectdStudent = selectdStudent;

@@ -13,12 +13,12 @@ namespace Evaluation_Manager.Repositories
     {
         public static Teacher GetTeacher(int id)
         {
-            return FetchTeacher($"SELECT * FROM Students WHERE Id = {id}");
+            return FetchTeacher($"SELECT * FROM Teachers WHERE Id = {id}");
         }
 
         public static Teacher GetTeacher(string username)
         {
-            return FetchTeacher($"SELECT * FROM Students WHERE Username = '{username}'");
+            return FetchTeacher($"SELECT * FROM Teachers WHERE Username = '{username}'");
         }
 
         private static Teacher FetchTeacher(string sql) 

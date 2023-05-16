@@ -27,7 +27,7 @@ namespace Evaluation_Manager
 
             LoggedInTeacher = TeacherRepository.GetTeacher(username);
             
-            if(LoggedInTeacher!= null && LoggedInTeacher.Password == password)
+            if(LoggedInTeacher!= null && LoggedInTeacher.CheckPassword(password) == true)
             {
                 this.Hide();
                 FrmStudents frmStudents = new FrmStudents();
